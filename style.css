@@ -1,0 +1,96 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: rgb(180,179,223);
+    background: linear-gradient(156deg, rgba(180,179,223,.8) , rgba(252,203,233,.9) );
+}
+
+.first_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url(image/new2.jpeg);
+    opacity: .9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%
+}
+.companyName{
+    padding: .6em;
+    font-size: 4em;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+.main{
+    width: fit-content;
+    height: fit-content;
+    padding: 5em;
+    padding-top: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(114, 14, 158);
+    background: rgb(180,179,223);
+    background: linear-gradient(156deg, rgba(180,179,223,.6) , rgba(252,203,233,.6) );
+    border-radius: 10%;
+}
+.title{
+    font-size: 2.5em;
+    padding-bottom: 2em;
+    font-family: cursive;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 black, 0 -1px black;
+}
+.Yid{
+    font-size: 1.3em;
+    font-family: cursive;
+    text-shadow: 1px 1px 2px #EE82EE;
+}
+.SearchContainer{
+    border-style: solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-width: .1px;
+    overflow: hidden;
+    width: 30vw;
+    display: flex;
+    height: 7.5vh;
+}
+#submit{
+    height: 100%;
+    color: #fafafa;
+    cursor: pointer;
+    float: right;
+    font: 15px Arial, Helvetica;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(0, 0 ,0, .3);
+    width: 20%;
+    padding: 10px;
+    background-color: #452c63;
+}
+#search{
+    border: 1px solid #CCC;
+    box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+    color: #999;
+    float: left;
+    height: 82%;
+    padding: 1%;
+    width: 80%;
+    font-size: 1.2em;
+}
+@media screen and (max-width:700px){
+    .SearchContainer{
+        height: 6.5vh;
+        width:60vw
+        
+    }
+    .title{
+        font-size: 1.5em;}
+        .Yid{
+            font-size: 1em;}
+}
